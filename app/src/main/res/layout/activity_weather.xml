@@ -13,6 +13,14 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#484E61" >
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:textSize="10sp"
+            android:textColor="#484E61"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/switch_city"/>
         <TextView
             android:id="@+id/city_name"
             android:layout_width="wrap_content"
@@ -21,6 +29,14 @@
             android:textColor="#fff"
             android:textSize="24sp"
             android:text="City Name"/>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="Refresh"
+            android:textSize="10sp"
+            android:textColor="#484E61"
+            android:layout_alignParentRight="true"
+            android:id="@+id/refresh_weather"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -90,27 +106,6 @@
                     android:textSize="40sp"
                     android:text="temp1"/>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/button_layout"
-            android:layout_alignParentBottom="true">
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Refresh"
-                android:textColor="#484E61"
-                android:id="@+id/refresh_weather"/>
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="switch"
-                android:textColor="#484E61"
-                android:id="@+id/switch_city"/>
         </LinearLayout>
     </RelativeLayout>
 </LinearLayout>
